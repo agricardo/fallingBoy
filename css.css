@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+}
+
+#background {
+    background: url('img/background.jpg') 0 0 no-repeat;
+    background-position: center;
+    height: 4675px;
+    width: 100%;
+    z-index: -1;
+}
+
+#boy {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: -80px;
+    margin: auto;
+    background: url('img/crazy_boy.png') 0 0 no-repeat;
+    width: 71px;
+    height: 80px;
+    background-size: 216px 240px;
+    transition: top 1s ease;
+    animation: fall 1s steps(3) infinite;
+}
+
+@keyframes fall {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 -240px;
+    }
+}
